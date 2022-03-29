@@ -109,3 +109,10 @@ input{
     margin-top: 95px;
     font-size: x-large;
 }
+
+footer{
+    height: 70px;
+    background-color:rgb(216, 114, 19);
+    border: solid 3px rgb(216, 114, 19);
+    border-radius: 10px;
+}
