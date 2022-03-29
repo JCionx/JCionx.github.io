@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(255, 202, 152);
+}
+
+.title{
+    color: white;
+    background-color: rgb(216, 114, 19);
+    border: solid rgb(216, 114, 19) 3px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.selectedLink{
+    color: black;
+    background-color: white;
+    border: solid white 3px;
+    border-radius: 10px;
+    font-family: 'Courier New';
+    margin: 10px;
+}
+
+.otherLink{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New';
+    margin: 10px;
+}
+
+.invHr{
+    text-decoration: none;
+    border: none;
+}
+
+p{
+    font-size: large;
+    font-family:'Trebuchet MS';
+}
+
+h1{
+    font-family:'Trebuchet MS';
+}
+
+h2{
+    font-family:'Trebuchet MS';
+}
+
+h3{
+    font-family:'Trebuchet MS';
+}
+
+h4{
+    font-family:'Trebuchet MS';
+}
+
+h5{
+    font-family:'Trebuchet MS';
+}
+
+h6{
+    font-family:'Trebuchet MS';
+}
+
+button{
+    color: rgb(216, 114, 19);
+    font-family:'Trebuchet MS';
+    width: 208px;
+    background-color: white;
+    border: solid rgb(216, 114, 19) 2px;
+    border-radius: 10px;
+}
+
+input{
+    font-family:'Trebuchet MS';
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    border: solid rgb(216, 114, 19) 2px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.icon{
+    width: 200px;
+    height: 200px;
+    border: solid rgb(216, 114, 19) 3px;
+    border-radius: 100px;
+    margin: 50px;
+    float: left;
+}
+
+.welcomeText{
+    color: black;
+    margin-top: 95px;
+    font-size: x-large;
+}
