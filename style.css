@@ -68,6 +68,12 @@ button{
     background-color: white;
     border: solid rgb(216, 114, 19) 2px;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(216, 114, 19);
+    color: white;
 }
 
 input{
