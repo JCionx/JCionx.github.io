@@ -95,7 +95,7 @@ input{
     text-align: center;
 }
 
-.icon{
+.webIcon{
     width: 200px;
     height: 200px;
     border: solid rgb(216, 114, 19) 3px;
@@ -110,9 +110,26 @@ input{
     font-size: x-large;
 }
 
+.copyright{
+    text-align: center;
+    font-family: Arial;
+    font-size: small;
+    color: #FBFBFB;
+}
+
+.socialMedia{
+    height: 40px;
+    width: 40px;
+}
+
+.socialMediaLink{
+    text-decoration: none;
+}
+
 footer{
-    height: 70px;
-    background-color:rgb(216, 114, 19);
-    border: solid 3px rgb(216, 114, 19);
-    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    border: solid rgb(216, 114, 19) 10px;
+    border-radius: 20px;
+    background-color: rgb(216, 114, 19);
 }
