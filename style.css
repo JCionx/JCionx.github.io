@@ -130,6 +130,6 @@ footer{
     align-items: center;
     text-align: center;
     border: solid rgb(216, 114, 19) 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgb(216, 114, 19);
 }
