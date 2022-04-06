@@ -12,6 +12,7 @@ body{
 }
 
 .selectedLink{
+    text-decoration: none;
     color: black;
     background-color: white;
     border: solid white 3px;
@@ -72,11 +73,13 @@ h6{
 button{
     color: rgb(216, 114, 19);
     font-family:'Trebuchet MS';
-    width: 208px;
+    width: 250px;
+    height: 80px;
     background-color: white;
     border: solid rgb(216, 114, 19) 2px;
     border-radius: 10px;
     transition: 0.3s;
+    margin: 10px;
 }
 
 button:hover{
@@ -132,4 +135,35 @@ footer{
     border: solid rgb(216, 114, 19) 10px;
     border-radius: 10px;
     background-color: rgb(216, 114, 19);
+}
+
+.project{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(216, 114, 19);
+    border: solid 3px rgb(216, 114, 19);
+    border-radius: 10px;
+    padding: 0;
+}
+
+.project img{
+    width: 80%;
+    text-align: center;
+    background-color: rgb(216, 114, 19);
+    border: solid 3px rgb(216, 114, 19);
+    border-radius: 10px;
+    padding: 0;
+}
+
+.guesscontent{
+    text-align: center;
+    padding: 80px;
+    background-color: #b5e61d;
+    border-radius: 10px;
+}
+
+.centerMe{
+    text-align: center;
 }
