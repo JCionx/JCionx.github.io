@@ -1,127 +1,169 @@
-.langLink img{
-    text-align: right;
-    width: 4vw;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
+body{
+    background-color: rgb(255, 202, 152);
 }
 
-.logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-
-nav{
+.title{
+    color: white;
+    background-color: rgb(216, 114, 19);
+    border: solid rgb(216, 114, 19) 3px;
+    border-radius: 10px;
+    width: 100%;
     text-align: center;
 }
 
 .selectedLink{
     text-decoration: none;
-    background-color: black;
-    color: white;
-    border: solid black 1.5px;
-    border-radius: 4px;
-    font-family: "Courier New";
-    font-size: 25px;
+    color: black;
+    background-color: white;
+    border: solid white 3px;
+    border-radius: 10px;
+    font-family: 'Courier New';
+    margin: 10px;
 }
 
 .otherLink{
     text-decoration: none;
-    background-color: white;
-    color: black;
-    border: solid black 1.5px;
-    border-radius: 4px;
-    font-family: "Courier New";
-    font-size: 25px;
-    transition: 0.2s;
+    color: white;
+    font-family: 'Courier New';
+    margin: 10px;
+    transition: 0.3s;
 }
 
 .otherLink:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    border: solid 3px white;
+    border-radius: 10px;
 }
 
-.text{
-    font-family: 'Lucida Sans';
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-shadow: 1px 1px 4px black;
+.invHr{
+    text-decoration: none;
+    border: none;
 }
 
-.diagnosis{
-    background-color: #ff5500;
+p{
+    font-size: large;
+    font-family:'Trebuchet MS';
 }
 
 h1{
-    font-family: 'Lucida Sans';
-    margin-left: 10px;
-    margin-right: 10px;
+    font-family:'Trebuchet MS';
 }
 
-.button{
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-    border: solid white 1.5px;
-    border-radius: 4px;
-    font-family: "Courier New";
-    margin: 10px;
-    font-size: 25px;
-    transition: 0.2s;
-    text-shadow: 1px 1px 4px black;
+h2{
+    font-family:'Trebuchet MS';
 }
 
-.button:hover{
+h3{
+    font-family:'Trebuchet MS';
+}
+
+h4{
+    font-family:'Trebuchet MS';
+}
+
+h5{
+    font-family:'Trebuchet MS';
+}
+
+h6{
+    font-family:'Trebuchet MS';
+}
+
+button{
+    color: rgb(216, 114, 19);
+    font-family:'Trebuchet MS';
+    width: 250px;
+    height: 80px;
     background-color: white;
-    color: #ff5500;
-    margin: 15px;
+    border: solid rgb(216, 114, 19) 2px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 10px;
 }
 
-.copyright{
-    font-family: 'Lucida Sans';
+button:hover{
+    background-color: rgb(216, 114, 19);
+    color: white;
+}
+
+input{
+    font-family:'Trebuchet MS';
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    border: solid rgb(216, 114, 19) 2px;
+    border-radius: 10px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.webIcon{
+    width: 200px;
+    height: 200px;
+    border: solid rgb(216, 114, 19) 3px;
+    border-radius: 100px;
+    margin: 50px;
+    float: left;
+}
+
+.welcomeText{
+    color: black;
+    margin-top: 95px;
+    font-size: x-large;
+}
+
+.copyright{
+    text-align: center;
+    font-family: Arial;
+    font-size: small;
+    color: #FBFBFB;
+}
+
+.socialMedia{
+    height: 40px;
+    width: 40px;
+}
+
+.socialMediaLink{
+    text-decoration: none;
 }
 
 footer{
-    margin-top: auto;
+    align-items: center;
+    text-align: center;
+    border: solid rgb(216, 114, 19) 10px;
+    border-radius: 10px;
+    background-color: rgb(216, 114, 19);
 }
 
-@keyframes slideFromRight{
-    0%{
-        transform: translateX(100%);
-        filter: opacity(0);
-    }
-    100%{
-        transfrm: translateX(0);
-        filter: opacity(100%);
-    }
+.project{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(216, 114, 19);
+    border: solid 3px rgb(216, 114, 19);
+    border-radius: 10px;
+    padding: 0;
 }
 
-main{
-    animation: 0.5s ease-out 0s 1 slideFromRight;
+.project img{
+    width: 80%;
+    text-align: center;
+    background-color: rgb(216, 114, 19);
+    border: solid 3px rgb(216, 114, 19);
+    border-radius: 10px;
+    padding: 0;
 }
 
-.ssd{
-    background-image: url(Others/ssd.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding: 60px;
+.guesscontent{
+    text-align: center;
+    padding: 80px;
+    background-color: #b5e61d;
+    border-radius: 10px;
 }
 
-.win{
-    background-image: url(Others/win.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding: 60px;
+.centerMe{
+    text-align: center;
 }
