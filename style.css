@@ -1,169 +1,122 @@
 body{
-    background-color: rgb(255, 202, 152);
+    background-color: black;
+}
+
+p{
+    color: white;
+    font-family: Arial;
+}
+
+.link{
+    padding: 8px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    background: none;
+    font-family: Arial;
+    transition: 0.2s ease-in;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.link:hover{
+    color: black;
+}
+
+.link:before{
+    content: "";
+    background: white;
+    transition: top 0.2s ease-in;
+    -webkit-transition: top 0.2s ease-in;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+}
+
+.link:hover:before{
+    top: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .title{
     color: white;
-    background-color: rgb(216, 114, 19);
-    border: solid rgb(216, 114, 19) 3px;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.selectedLink{
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    border: solid white 3px;
-    border-radius: 10px;
-    font-family: 'Courier New';
-    margin: 10px;
-}
-
-.otherLink{
-    text-decoration: none;
-    color: white;
-    font-family: 'Courier New';
-    margin: 10px;
-    transition: 0.3s;
-}
-
-.otherLink:hover{
-    background-color: white;
-    color: black;
-    border: solid 3px white;
-    border-radius: 10px;
-}
-
-.invHr{
-    text-decoration: none;
-    border: none;
-}
-
-p{
-    font-size: large;
-    font-family:'Trebuchet MS';
-}
-
-h1{
-    font-family:'Trebuchet MS';
-}
-
-h2{
-    font-family:'Trebuchet MS';
-}
-
-h3{
-    font-family:'Trebuchet MS';
-}
-
-h4{
-    font-family:'Trebuchet MS';
-}
-
-h5{
-    font-family:'Trebuchet MS';
-}
-
-h6{
-    font-family:'Trebuchet MS';
-}
-
-button{
-    color: rgb(216, 114, 19);
-    font-family:'Trebuchet MS';
-    width: 250px;
-    height: 80px;
-    background-color: white;
-    border: solid rgb(216, 114, 19) 2px;
-    border-radius: 10px;
-    transition: 0.3s;
-    margin: 10px;
-}
-
-button:hover{
-    background-color: rgb(216, 114, 19);
-    color: white;
-}
-
-input{
-    font-family:'Trebuchet MS';
-    width: 200px;
-    height: 25px;
-    background-color: white;
-    border: solid rgb(216, 114, 19) 2px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.webIcon{
-    width: 200px;
-    height: 200px;
-    border: solid rgb(216, 114, 19) 3px;
-    border-radius: 100px;
-    margin: 50px;
-    float: left;
-}
-
-.welcomeText{
-    color: black;
-    margin-top: 95px;
-    font-size: x-large;
-}
-
-.copyright{
-    text-align: center;
     font-family: Arial;
-    font-size: small;
-    color: #FBFBFB;
+    font-size: 20px;
 }
 
-.socialMedia{
-    height: 40px;
-    width: 40px;
+.title2{
+    color: white;
+    font-family: Arial;
+    font-size: 20vh;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 0;
 }
 
-.socialMediaLink{
-    text-decoration: none;
+.redtopurple{
+    background: linear-gradient(90deg, yellow, #36deed, #1dfa96, orange, red, purple);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25vh;
+    animation: nameGradient 10s ease infinite;
+    }
+
+@keyframes nameGradient{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
 }
 
-footer{
-    align-items: center;
+.text{
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.link2{
+    margin-left: 50px;
+}
+
+.selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.grad{
     text-align: center;
-    border: solid rgb(216, 114, 19) 10px;
-    border-radius: 10px;
-    background-color: rgb(216, 114, 19);
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 20px 20px 15px rgb(0, 0, 0, 0.5);
+    position: relative;
+    top: 40px;
+    transition: 0.4s;
+    margin: 10px;
+    width: 20vh;
+    height: 20vh;
+    background: linear-gradient(90deg, yellow, #36deed, #1dfa96, orange, red, purple);
+    background-size: 400% 400%;
+    animation: nameGradient 10s ease infinite;
 }
 
-.project{
-    width: 70%;
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: rgb(216, 114, 19);
-    border: solid 3px rgb(216, 114, 19);
-    border-radius: 10px;
-    padding: 0;
-}
-
-.project img{
-    width: 80%;
-    text-align: center;
-    background-color: rgb(216, 114, 19);
-    border: solid 3px rgb(216, 114, 19);
-    border-radius: 10px;
-    padding: 0;
-}
-
-.guesscontent{
-    text-align: center;
-    padding: 80px;
-    background-color: #b5e61d;
-    border-radius: 10px;
-}
-
-.centerMe{
-    text-align: center;
+.grad:hover{
+    top: 0;
+    right: 40;
+    box-shadow: 20px 60px 15px rgb(0, 0, 0, 0.5);
+    height: 25vh;
+    width: 25vh;
 }
