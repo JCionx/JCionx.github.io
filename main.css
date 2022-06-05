@@ -1,3 +1,7 @@
+html{
+    zoom: 100%;
+}
+
 body{
     background-color: black;
 }
@@ -58,8 +62,8 @@ nav{
     color: white;
     font-family: Arial;
     font-size: 100px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
     margin-bottom: 0;
 }
 
@@ -81,12 +85,12 @@ nav{
 
 .text{
     font-size: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .link2{
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .selector{
