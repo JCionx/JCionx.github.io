@@ -57,7 +57,7 @@ nav{
 .title2{
     color: white;
     font-family: Arial;
-    font-size: 20vh;
+    font-size: 100px;
     margin-top: 50px;
     margin-left: 50px;
     margin-bottom: 0;
@@ -69,7 +69,7 @@ nav{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 25vh;
+    font-size: 140px;
     animation: nameGradient 10s ease infinite;
     }
 
