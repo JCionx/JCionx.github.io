@@ -200,3 +200,12 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 }
+
+@keyframes unvanish{
+    0% {filter: opacity(0);}
+    100% {filter: opacity(100);}
+}
+
+main {
+    animation: 1s ease-out 0s 1 unvanish;
+}
