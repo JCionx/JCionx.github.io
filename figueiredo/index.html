@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vai com Calma Figueiredo</title>
+    <link rel="stylesheet" href="background.css">
+    <style>
+        body {
+            margin: 0;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        header {
+            background-color: #FF6F6F;
+            height: 100vh;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            height: 100vh;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #FF6F6F;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .cover {
+            width: 40vh;
+            padding: 30px;
+            border-radius: 40px;
+        }
+
+        .button {
+            width: 8vh;
+            padding: 0px;
+            border-radius: 40px;
+            margin-top: 0;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        .title {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 40px;
+        }
+
+        .subtitle {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 0px;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        .dark-subtitle {
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 30px;
+            font-weight: lighter;
+            margin: 0;
+        }
+
+        .copyright {
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 20px;
+            font-weight: lighter;
+            text-decoration: none;
+            margin: 0;
+            padding: 5px;
+        }
+
+        .player {
+            -webkit-box-shadow: 10px 9px 20px -1px rgba(0,0,0,0.55);
+            -moz-box-shadow: 10px 9px 20px -1px rgba(0,0,0,0.55);
+            box-shadow: 10px 9px 20px -1px rgba(0,0,0,0.55);
+            border-radius: 12px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="center cover" src="assets/cover.jpg" alt="Cover">
+        <h1 class="center title">Vai com Calma Figueiredo</h1>
+        <h2 class="center subtitle">Sidnei, Tiago e João</h2>
+        <img class="button center" onclick="scrollToPlatforms()" src="assets/down.svg" alt="Scroll Down">
+    </header>
+    <main id="platforms">
+        <h2 class="center dark-subtitle">Ouvir em:</h2>
+        
+        <iframe class="center player" style="border-radius:12px;" width="70%" height="175" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1418054275&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe class="center player" style="border-radius:12px" src="https://open.spotify.com/embed/track/3VI0nzEEvFvUS2hVEu5YYy?utm_source=generator&theme=0" width="70%" height="175" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="center player" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" width="70%" height="175" style="width:70%;max-width:70%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/vai-com-calma-figueiredo/1665929514?i=1665929515"></iframe>
+        <iframe class="center player" style="border-radius:12px" width="70%" height="175" src="https://www.youtube.com/embed/pR7yqvQhFaY" title="Vai com Calma Figueiredo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main>
+    <footer>
+        <a class="center copyright" href="https://jcionx.github.io">jcionx.github.io</a>
+        <p class="center copyright">Copyright &copy; 2023</p>
+    </footer>
+
+    <script>
+        function scrollToPlatforms() {
+            document.getElementById('platforms').scrollIntoView({block: 'start', behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
