@@ -11,12 +11,15 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://jcionx.github.io/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="mask-icon" href="safari-pinned-tab.svg">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54e27e66ff8c3689dfecdb85f555418a3ce51ded20bae1e0a9d37a3ccc41d98f.css" integrity="sha256-VOJ&#43;Zv&#43;MNonf7NuF9VVBijzlHe0guuHgqdN6PMxB2Y8=" rel="preload stylesheet" as="style">
+<noscript>
+    <link crossorigin="anonymous" href="/css/includes/noscript.7addfebfaca53cd539e359cff0971871674d2f68636af10f56c0ffa9bc574e70.css" integrity="sha256-et3&#43;v6ylPNU541nP8JcYcWdNL2hjavEPVsD/qbxXTnA=" rel="preload stylesheet" as="style">
+</noscript>
+<link rel="icon" href="https://jcionx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jcionx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jcionx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jcionx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jcionx.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 
@@ -45,43 +48,7 @@ if (!doNotTrack) {
 
 <link rel="alternate" type="application/rss+xml" href="https://jcionx.github.io/index.xml">
 <link rel="alternate" type="application/json" href="https://jcionx.github.io/index.json">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LVK1X0JDZ"></script>
 <script>
 var doNotTrack = false;
@@ -117,16 +84,7 @@ if (!doNotTrack) {
 </head>
 
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
+<script crossorigin="anonymous" src="/assets/js/theme.b20f95bb4da41ef90a2610a557a7000b2649a3f47282ec571676da6fc0427200.js" integrity="sha256-sg&#43;Vu02kHvkKJhClV6cACyZJo/RyguxXFnbab8BCcgA="></script>
 
 <header class="header">
     <nav class="nav">
@@ -155,6 +113,9 @@ if (!doNotTrack) {
                 </button>
             </div>
         </div>
+        <input id="hamburger-input" type="checkbox"></input>
+        <label id="hamburger-menu" for="hamburger-input"></label>
+        <div class="overlay"></div>
         <ul id="menu">
             <li>
                 <a href="https://jcionx.github.io/" title="Home">
@@ -184,7 +145,7 @@ if (!doNotTrack) {
     </div>
     <footer class="entry-footer">
         <div class="social-icons">
-    <a href="https://github.com/JCionx" target="_blank" rel="noopener noreferrer me" title="Github">
+    <a href="https://github.com/JCionx" rel="noopener noreferrer me" title="Github">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round">
     <path
@@ -192,14 +153,14 @@ if (!doNotTrack) {
     </path>
 </svg>
     </a>
-    <a href="https://t.me/JCionx" target="_blank" rel="noopener noreferrer me" title="Telegram">
+    <a href="https://t.me/JCionx" rel="noopener noreferrer me" title="Telegram">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round">
     <path
         d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1 0 0 0 .933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654 0 0 0-1.034-.407z" />
 </svg>
     </a>
-    <a href="mailto:jcionx@gmail.com" target="_blank" rel="noopener noreferrer me" title="Email">
+    <a href="mailto:jcionx@gmail.com" rel="noopener noreferrer me" title="Email">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round">
     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -209,6 +170,20 @@ if (!doNotTrack) {
 </div>
 
     </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Blog
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hello there!
+I just added a few thing to things to this blog, and now the experience is much better. I added Google Analytics to the site, so I can keep up with this blog’s popularity. I also added a favicon, and I’m trying to apply a few changes to this theme, since code blocks are kind of broken. Tomorow I will keep updating this blog.
+See you tomorow!</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-05-20 22:01:46 +0100 BST'>May 20, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Blog" href="https://jcionx.github.io/posts/blog/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -236,61 +211,7 @@ The usage of the API is simple. Open the settings app inside htmlOS, and use the
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
+<script defer crossorigin="anonymous" src="/assets/js/papermod.727d74878dd0d630d592de1483de40c9393b9d59c42ec34eeac2b18635dd8959.js" integrity="sha256-cn10h43Q1jDVkt4Ug95AyTk7nVnELsNO6sKxhjXdiVk="></script>
 </body>
 
 </html>

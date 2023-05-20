@@ -14,14 +14,15 @@ I made a simple function that allows windows to be spawned in the HTML&rsquo;s b
 The usage of the API is simple. Open the settings app inside htmlOS, and use the copy code button.">
 <meta name="author" content="">
 <link rel="canonical" href="https://jcionx.github.io/posts/htmlos/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
-    onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="mask-icon" href="safari-pinned-tab.svg">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54e27e66ff8c3689dfecdb85f555418a3ce51ded20bae1e0a9d37a3ccc41d98f.css" integrity="sha256-VOJ&#43;Zv&#43;MNonf7NuF9VVBijzlHe0guuHgqdN6PMxB2Y8=" rel="preload stylesheet" as="style">
+<noscript>
+    <link crossorigin="anonymous" href="/css/includes/noscript.7addfebfaca53cd539e359cff0971871674d2f68636af10f56c0ffa9bc574e70.css" integrity="sha256-et3&#43;v6ylPNU541nP8JcYcWdNL2hjavEPVsD/qbxXTnA=" rel="preload stylesheet" as="style">
+</noscript>
+<link rel="icon" href="https://jcionx.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jcionx.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jcionx.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jcionx.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jcionx.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 
@@ -48,43 +49,7 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LVK1X0JDZ"></script>
 <script>
 var doNotTrack = false;
@@ -167,18 +132,10 @@ The usage of the API is simple. Open the settings app inside htmlOS, and use the
 </head>
 
 <body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
+<script crossorigin="anonymous" src="/assets/js/theme.b20f95bb4da41ef90a2610a557a7000b2649a3f47282ec571676da6fc0427200.js" integrity="sha256-sg&#43;Vu02kHvkKJhClV6cACyZJo/RyguxXFnbab8BCcgA="></script>
 
 <header class="header">
+    <div id="progressBar"></div>
     <nav class="nav">
         <div class="logo">
             <a href="https://jcionx.github.io/" accesskey="h" title="JCionx&#39;s Blog (Alt + H)">JCionx&#39;s Blog</a>
@@ -205,6 +162,9 @@ The usage of the API is simple. Open the settings app inside htmlOS, and use the
                 </button>
             </div>
         </div>
+        <input id="hamburger-input" type="checkbox"></input>
+        <label id="hamburger-menu" for="hamburger-input"></label>
+        <div class="overlay"></div>
         <ul id="menu">
             <li>
                 <a href="https://jcionx.github.io/" title="Home">
@@ -235,16 +195,18 @@ The usage of the API is simple. Open the settings app inside htmlOS, and use the
     <div class="post-meta"><span title='2023-05-19 20:13:05 +0100 BST'>May 19, 2023</span>
 
 </div>
+    <div class="post-meta">
+</div>
   </header> 
   <div class="post-content"><p>Hello there!</p>
 <p>I am currently developing htmlOS!</p>
 <p>htmlOS is <em>supposedly</em> an operating system made entirely with HTML, CSS and JavaScript.</p>
 <p>I made a simple function that allows windows to be spawned in the HTML&rsquo;s body. Then I decided to make a taskbar, a menu, and some apps. Now there are even notifications, APIs, and an App Store.</p>
 <p>The usage of the API is simple. Open the settings app inside htmlOS, and use the copy code button. In your htmlOS app, insert this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">// Example notification API usage
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">parent</span>.<span style="color:#a6e22e">shownotification</span>(<span style="color:#e6db74">&#39;Title&#39;</span>, <span style="color:#e6db74">&#39;Description&#39;</span>, <span style="color:#e6db74">&#39;3000&#39;</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// You need to include &#34;parent&#34; before any API call, because your htmlOS app will run inside an iframe.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Example notification API usage
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">parent</span><span class="p">.</span><span class="nx">shownotification</span><span class="p">(</span><span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;Description&#39;</span><span class="p">,</span> <span class="s1">&#39;3000&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// You need to include &#34;parent&#34; before any API call, because your htmlOS app will run inside an iframe.
 </span></span></span></code></pre></div><p>If you want to try htmlOS for yourself, do so by clicking on <a href="https://jcionx.github.io/htmlOS">this</a> link.</p>
 <p>That&rsquo;s it!</p>
 
@@ -274,61 +236,7 @@ The usage of the API is simple. Open the settings app inside htmlOS, and use the
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
+<script defer crossorigin="anonymous" src="/assets/js/papermod.727d74878dd0d630d592de1483de40c9393b9d59c42ec34eeac2b18635dd8959.js" integrity="sha256-cn10h43Q1jDVkt4Ug95AyTk7nVnELsNO6sKxhjXdiVk="></script>
 </body>
 
 </html>
