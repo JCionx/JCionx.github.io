@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>JCionx&#39;s Blog</title>
-    <link>https://jcionx.github.io/</link>
+    <link>/</link>
     <description>Recent content on JCionx&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 May 2023 20:13:05 +0100</lastBuildDate><atom:link href="https://jcionx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 May 2023 20:13:05 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>htmlOS</title>
-      <link>https://jcionx.github.io/posts/htmlos/</link>
+      <link>/posts/htmlos/</link>
       <pubDate>Fri, 19 May 2023 20:13:05 +0100</pubDate>
       
-      <guid>https://jcionx.github.io/posts/htmlos/</guid>
+      <guid>/posts/htmlos/</guid>
       <description>Hello there!
 I am currently developing htmlOS!
 htmlOS is supposedly an operating system made entirely with HTML, CSS and JavaScript.
