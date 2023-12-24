@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCionx's website</title>
+    <link rel="stylesheet" href="assets/css/animated-logo.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="main-text">
+            <div class="main-title">
+                <img src="assets/images/jcionx.webp">
+                <h1>JCionx</h1>
+            </div>
+            <p style="font-style: italic;">“Professional unemployed”</p>
+            <div class="social">
+                <a href="mailto:jcionx0@gmail.com"><img src="assets/images/email-icon.svg" draggable="false"/></a>
+            </div>
+        </div>
+        <div id="logo" onclick="game()">
+            <img src="assets/images/logo-4.svg" draggable="false" />
+            <img src="assets/images/logo-3.svg" draggable="false" />
+            <img src="assets/images/logo-2.svg" draggable="false" />
+            <img src="assets/images/logo-1.svg" draggable="false" />
+        </div>
+    </main>
+    <h2 style="margin-left: 30px; margin-bottom: -60px;">Projects</h2>
+    <div class="projects">
+        <div class="project" style="background: url(assets/images/project1-icon.png) no-repeat center center;;">
+            <div class="project-text">
+                <span class="project-title">htmlOS 2</span>
+                <span class="project-desc">A web based operating system that uses iframes as apps</span>
+            </div>
+            <div class="project-actions">
+                <a class="main-project-btn" href="https://jcionx.github.io/htmlOS2/" target="_blank">Open</a>
+                <a class="sec-project-btn" href="https://github.com/JCionx/htmlOS2" target="_blank"><img src="assets/images/github-mark.svg" style="width: 90%;"></a>
+            </div>
+        </div>
+        <div class="project" style="background: url(assets/images/project2-icon.png) no-repeat center center;">
+            <div class="project-text">
+                <span class="project-title">Outertune</span>
+                <span class="project-desc">A web youtube music player</span>
+            </div>
+            <div class="project-actions">
+                <a class="main-project-btn" href="https://jcionx.github.io/OuterTune/" target="_blank">Open</a>
+                <a class="sec-project-btn" href="https://github.com/JCionx/OuterTune" target="_blank"><img src="assets/images/github-mark.svg" style="width: 90%;"></a>
+            </div>
+        </div>
+        <div class="project" style="background: url(assets/images/project3-icon.png) no-repeat center center;">
+            <div class="project-text">
+                <span class="project-title">hOS</span>
+                <span class="project-desc">A web based operating system for mobile based devices</span>
+            </div>
+            <div class="project-actions">
+                <a class="main-project-btn" href="https://jcionx.github.io/hOS/" target="_blank">Open</a>
+                <a class="sec-project-btn" href="https://github.com/JCionx/hOS" target="_blank"><img src="assets/images/github-mark.svg" style="width: 90%;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="ship" id="ship">
+        <img src="assets/images/spaceship.png" draggable="false">
+    </div>
+    <div class="bullet" id="bullet">
+        <img src="assets/images/projectile.png" draggable="false">
+    </div>
+    <div class="astroid" id="astroid">
+        <img src="assets/images/asteroid.png" draggable="false">
+    </div>
+    <script src="assets/js/animated-logo.js"></script>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>

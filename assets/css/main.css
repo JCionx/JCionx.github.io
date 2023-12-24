@@ -1,0 +1,309 @@
+body, html {
+    margin: 0;
+    background-color: rgb(46, 46, 48);
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+    cursor: url(../images/cursor.svg) 15 15, auto;
+}
+
+a {
+    cursor: url(../images/pointer.svg) 15 15, auto;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+    cursor: url(../images/text-cursor.svg) 15 15, auto;
+}
+
+*::selection {
+    background: #B0C7D0;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.main-title  {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-title > h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 6px;
+    width: 100%;
+}
+
+.main-title img {
+    width: 3.5rem;
+    margin-right: 5px;
+}
+
+.main-text {
+    width: 50vw;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.main-text > p, .main-text > h1 {
+    margin: 6px;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.social img {
+    padding: 5px;
+    margin: 4px;
+    background-color: rgb(85, 85, 85);
+    border-radius: 12px;
+    width: 30px;
+}
+
+#logo {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 30px;
+}
+
+.projects {
+    width: calc(100vw - 40px);
+    background-color: rgb(77, 77, 77);
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.project {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(95, 92, 92);
+    border-radius: 10px;
+    margin: 20px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: 0.1s;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.project:hover {
+    /* Make it rotate 3D a bit to the right and tilt it up a bit */
+    transform: rotate3d(0, 1, 0, 10deg) rotateX(15deg) scale(1.03);
+    perspective: 0px;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+.project-desc {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+/* add shadow to the text */
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.project a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px aliceblue;
+    transition: 0.2s;
+}
+
+.project a:hover {
+    background-color: aliceblue;
+    color: darkslategrey;
+}
+
+
+.project-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.project > a > span {
+    margin-top: -40px;
+}
+
+.main-project-btn {
+    width: 100%;
+    margin: 8px 0 8px 8px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(240, 248, 255, 0.295);
+}
+
+.sec-project-btn {
+    background-color: aliceblue;
+    margin: 8px 8px 8px 8px;
+    width: 34px;
+}
+
+/* media query for a screen smaller 785px, keep the loog at trhe side of the title, and align all main titles, to the left */
+@media screen and (max-width: 785px) {
+    main {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-title {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-title > h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 6px;
+    }
+
+    .main-title img {
+        width: 2.5rem;
+        margin-right: 5px;
+    }
+
+    .main-text {
+        width: 80vw;
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .main-text > p, .main-text > h1 {
+        margin: 6px;
+        width: 100%;
+    }
+
+    #logo {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: 30px;
+    }
+
+    .projects {
+        width: calc(100vw - 40px);
+        background-color: rgb(77, 77, 77);
+        border-radius: 10px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+
+    .project {
+        width: calc(100% - 10px);
+        height: 250px;
+        background-color: rgb(95, 92, 92);
+        border-radius: 10px;
+        margin: 15px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        transition: 0.1s;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+.ship, .bullet, .astroid {
+    position: absolute;
+    display: none;
+}
+
+.ship {
+    z-index: 5;
+}
+
+.bullet {
+    z-index: 2;
+}
+
+.astroid {
+    z-index: 4;
+}
+
+.astroid img {
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+    width: 80px;
+}
+
+.ship img {
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+    width: 80px;
+}
+
+.bullet img {
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+    width: 40px;
+}
