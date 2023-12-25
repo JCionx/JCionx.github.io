@@ -43,7 +43,7 @@ function game() {
         astroid.style.top = (y - (astroid.offsetHeight / 2)) + "px";
         astroid.style.left = (x - (astroid.offsetWidth / 2)) + "px";
         // set animation for astroid
-        astroid.animate([{
+        var astroidAnimation = astroid.animate([{
             transform: "translateX(-" + astroid.offsetWidth + "px)"
         }, {
             transform: "translateX(" + window.innerWidth + "px)"
@@ -56,12 +56,34 @@ function game() {
             astroid.remove();
         }, 3000)
         // check if astroid is hit by bullet
+        // check if astroid is hit by bullet
+        // check if astroid is hit by bullet
+        // check if astroid is hit by bullet
+        // check if astroid is hit by bullet
         setInterval(function() {
             var bullets = document.getElementsByClassName("bullet");
             for (var i = 0; i < bullets.length; i++) {
                 var bullet = bullets[i];
                 if (bullet.getBoundingClientRect().right >= astroid.getBoundingClientRect().left && bullet.getBoundingClientRect().left <= astroid.getBoundingClientRect().right && bullet.getBoundingClientRect().top <= astroid.getBoundingClientRect().bottom && bullet.getBoundingClientRect().bottom >= astroid.getBoundingClientRect().top) {
-                    astroid.remove();
+                    var currentAstroidPosition = astroid.getBoundingClientRect(); // store current position
+                    astroid.querySelector('img').src = 'assets/images/astroid-explosion.gif'; // change the image source
+                    bullet.style.display = 'none'; // hide the bullet that hit the astroid
+                    astroidAnimation.cancel(); // stop the astroid's animation
+
+                    // set astroid's position to the position it was when hit
+                    astroid.style.top = currentAstroidPosition.top + 'px';
+                    astroid.style.left = currentAstroidPosition.left + 'px';
+
+                    var frameCount = 0;
+                    function removeAstroidAfterFrames() {
+                        frameCount++;
+                        if (frameCount >= 20) {
+                            astroid.remove();
+                        } else {
+                            requestAnimationFrame(removeAstroidAfterFrames);
+                        }
+                    }
+                    requestAnimationFrame(removeAstroidAfterFrames);
                 }
             }
         }, 1)
